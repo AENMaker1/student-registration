@@ -17,9 +17,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         include 'conn.php';
         $query= "INSERT into registration  VALUES('','$username','$email','$telephone','$password')";
-        $run = mysqli_query($connect, $query);
+        $run = mysqli_query($connect, $query); //registration working very well
         if($run){
             $success = "Registration successful!";
+            echo "<script>window.location.href='login.php'</script>"; 
         }
         else{
             $error = "Registration unsuccessful!";
@@ -76,7 +77,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <p class="error"><?= $error ?></p>
     <?php endif; ?>
 
-    <form method="POST" action="login.html">
+    <form method="POST" action="">
         <label>username</label>
         <input type="text" name="username" required>
 
