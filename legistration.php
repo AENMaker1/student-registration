@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         include 'conn.php';
         $query= "INSERT into registration  VALUES('','$username','$email','$telephone','$password')";
-        $run = mysqli_query($connect, $query);
+        $run = mysqli_query($connect, $query); //Login working very well
         if($run){
             $success = "Registration successful!";
         }

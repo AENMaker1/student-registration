@@ -13,6 +13,7 @@
     nav {
         background-color: #333;
         overflow: hidden;
+        width: 40rem;
     }
 
     .navbar {

@@ -50,7 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             box-shadow: 0 0 8px rgba(0,0,0,0.1);
         }
         .form-box input {
-            width: 100%;
+            width: 20rem;
             padding: 10px;
             margin-top: 10px;
         }

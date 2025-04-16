@@ -1,8 +1,5 @@
 <?php
 $page_title = "Welcome to My Website";
-include 'nav.php'; 
-include 'records.php';
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,20 +9,26 @@ include 'records.php';
     <title><?php echo $page_title; ?></title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            margin: 0;
-            padding: 0;
-            text-align: center;
+            font-family: Arial;
+            background: #f5f5f5;
+            display: flex;
+            flex-direction: column; 
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            width: 100%;
+            margin-top: 50px;
         }
         header {
             background-color: #333;
             color: white;
             padding: 1em 0;
+            width: 40rem;
         }
         main {
             padding: 2em;
         }
+     
         footer {
             background-color: #ddd;
             padding: 1em 0;
@@ -38,7 +41,11 @@ include 'records.php';
 <body>
 
 <header>
-    <h1><?php echo $page_title; ?></h1>
+    <h1 style="text-align:center;"><?php echo $page_title; ?></h1>
+    <?php 
+        include 'nav.php';
+        include 'records.php';
+    ?> 
 </header>
 
 <main>
